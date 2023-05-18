@@ -1,0 +1,33 @@
+.moneyContainer{
+    width: 25%;
+    /* background-color: aliceblue; */
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218, 0.754) 0%, rgb(95, 209, 249, 0.754) 100.2%);    height: 95vh;
+    margin: auto 0.8rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moneyListContainer{
+    list-style: none;
+    border: 1px solid red;
+    width: 80%;
+    padding: 1rem;
+    height: calc(100vh - 3rem);
+}
+
+.moneyListItem{
+    border: 1px solid rebeccapurple;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 0.2rem;
+    height: 5.6vh;
+    font-weight: 600;
+    background: radial-gradient(926px at 2.7% 11%, rgb(17, 29, 94, 0.545) 0%, rgb(178, 31, 102, 0.545) 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
