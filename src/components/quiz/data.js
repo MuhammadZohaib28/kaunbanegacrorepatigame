@@ -224,7 +224,7 @@ const data = [
         },
         {
           text: "Aapki Jaan",
-          correct: false,
+          correct: true,
         },
       ],
     },
