@@ -1,0 +1,90 @@
+.quizQuestionContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background: linear-gradient(106.8deg, rgb(117, 255, 220, 0.347) 6%, rgb(163, 216, 255, 0.347) 47.6%, rgb(248, 215, 251, 0.347) 87.8%);
+}
+
+.quizAnswersContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto;
+    height: 27vh;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.answer{
+    /* border: 1px solid red; */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 25rem;
+    height: 4rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background: linear-gradient(-225deg, rgb(158, 251, 211, 0.354) 0%, rgb(87, 233, 242, 0.354) 48%, rgb(69, 212, 251, 0.354) 100%);
+    cursor: pointer;
+}
+
+.answer:hover, 
+.answer.active{
+    background: linear-gradient(-225deg, rgb(158, 251, 211, 0.954) 0%, rgb(87, 233, 242, 0.954) 48%, rgb(69, 212, 251, 0.954) 100%);
+}
+
+
+
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+
+@keyframes correct{
+    0%, 22%, 42%{
+        background: linear-gradient(-225deg, rgb(158, 251, 211, 0.954) 0%, rgb(87, 233, 242, 0.954) 48%, rgb(69, 212, 251, 0.954) 100%);
+
+    }
+    20%,40%, 60%{
+        background: linear-gradient(70.6deg, rgb(172, 30, 255) 0.3%, rgb(65, 35, 251) 55.8%, rgb(35, 251, 224) 105.1%);
+
+    }
+    62%, 100%{
+        background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+
+    }
+}
+
+
+.answer.wrong{
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong{
+    0%, 22%, 42%{
+        background: linear-gradient(-225deg, rgb(158, 251, 211, 0.954) 0%, rgb(87, 233, 242, 0.954) 48%, rgb(69, 212, 251, 0.954) 100%);
+
+    }
+    20%,40%, 60%{
+        background: linear-gradient(70.6deg, rgb(172, 30, 255) 0.3%, rgb(65, 35, 251) 55.8%, rgb(35, 251, 224) 105.1%);
+
+    }
+    62%, 100%{
+        background: linear-gradient(108.4deg, rgb(253, 44, 56) 3.3%, rgb(176, 2, 12) 98.4%);
+
+    }
+}

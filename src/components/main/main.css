@@ -5,3 +5,36 @@
     margin: auto 0.8rem;
     border-radius: 1rem;
 }
+
+.mainTopContainer{
+    height: 50vh;
+    position: relative;
+}
+
+.mainBottomContainer{
+    height: 47.5vh;
+}
+
+.mainTopTimerContainer{
+    width: 7rem;
+    border: 5px solid rgb(246, 239, 239);
+    height: 7rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+}
+
+.mainBottomContainer{
+    /* border: 1px solid red; */
+    height: 44vh;
+    width: 68vw;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    background: linear-gradient(109.6deg, rgb(135, 168, 254) 11.2%, rgb(254, 165, 197) 100.2%);
+
+}
