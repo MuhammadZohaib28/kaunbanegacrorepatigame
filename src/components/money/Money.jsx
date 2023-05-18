@@ -1,29 +1,41 @@
-import React from 'react'
-import './money.css'
+import React from "react";
+import "./money.css";
 
 const Money = () => {
-    let num = 2;
+  let num = 2;
+  const moneySection = [
+    
+    { id: 1, currency: `PKR`, amount: num ** 0 },
+    { id: 2, currency: `PKR`, amount: num ** 1 },
+    { id: 3, currency: `PKR`, amount: num ** 2 },
+    { id: 4, currency: `PKR`, amount: num ** 3 },
+    { id: 5, currency: `PKR`, amount: num ** 4 },
+    { id: 6, currency: `PKR`, amount: num ** 5 },
+    { id: 7, currency: `PKR`, amount: num ** 6 },
+    { id: 8, currency: `PKR`, amount: num ** 7 },
+    { id: 9, currency: `PKR`, amount: num ** 8 },
+    { id: 10, currency: `PKR`, amount: num ** 9 },
+    { id: 11, currency: `PKR`, amount: num ** 10 },
+    { id: 12, currency: `PKR`, amount: num ** 11 },
+    { id: 13, currency: `PKR`, amount: num ** 12 },
+    { id: 14, currency: `PKR`, amount: num ** 13 },
+    { id: 15, currency: `PKR`, amount: num ** 14 },
+  ];
   return (
-    <div className='moneyContainer'>
-        <ul className="moneyListContainer">
-            <li className="moneyListItem">PKR {num**14}000</li>
-            <li className="moneyListItem">PKR {num**13}000</li>
-            <li className="moneyListItem">PKR {num**12}000</li>
-            <li className="moneyListItem">PKR {num**11}000</li>
-            <li className="moneyListItem">PKR {num**10}000</li>
-            <li className="moneyListItem">PKR {num**9}000</li>
-            <li className="moneyListItem">PKR {num**8}000</li>
-            <li className="moneyListItem">PKR {num**7}000</li>
-            <li className="moneyListItem">PKR {num**6}000</li>
-            <li className="moneyListItem">PKR {num**5}000</li>
-            <li className="moneyListItem">PKR {num**4}000</li>
-            <li className="moneyListItem">PKR {num**3}000</li>
-            <li className="moneyListItem">PKR {num**2}000</li>
-            <li className="moneyListItem">PKR {num**1}000</li>
-            <li className="moneyListItem">PKR {num**0}000</li>
-        </ul>
+    <div className="moneyContainer">
+      <ul className="moneyListContainer">
+        {moneySection.map((items) => {
+          return (
+            <li className="moneyListItem">
+              <span className="moneyListItemQuestion">QNO {items.id}</span>
+              <span className="moenyListItemMoney">{items.currency} {items.amount}000</span>
+            </li>
+          );
+        })}
+       
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Money
+export default Money;

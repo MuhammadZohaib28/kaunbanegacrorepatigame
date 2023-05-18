@@ -1,33 +1,74 @@
-.moneyContainer{
-    width: 25%;
-    /* background-color: aliceblue; */
-    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218, 0.754) 0%, rgb(95, 209, 249, 0.754) 100.2%);    height: 95vh;
-    margin: auto 0.8rem;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.moneyContainer {
+  width: 25%;
+  /* background-color: aliceblue; */
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218, 0.754) 0%,
+    rgb(95, 209, 249, 0.754) 100.2%
+  );
+  height: 95vh;
+  margin: auto 0.8rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.moneyListContainer{
-    list-style: none;
-    border: 1px solid red;
-    width: 80%;
-    padding: 1rem;
-    height: calc(100vh - 3rem);
+.moneyListContainer {
+  list-style: none;
+  border: 1px solid red;
+  width: 80%;
+  padding: 1rem;
+  height: calc(100vh - 3rem);
 }
 
-.moneyListItem{
-    border: 1px solid rebeccapurple;
-    padding: 0.5rem;
-    font-size: 1.1rem;
-    width: 100%;
-    border-radius: 0.8rem;
-    margin-bottom: 0.2rem;
-    height: 5.6vh;
-    font-weight: 600;
-    background: radial-gradient(926px at 2.7% 11%, rgb(17, 29, 94, 0.545) 0%, rgb(178, 31, 102, 0.545) 90%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.moneyListItem {
+  /* border: 1px solid rebeccapurple; */
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 0.2rem;
+  height: 5.6vh;
+  font-weight: 600;
+  background: linear-gradient(
+    90.5deg,
+    rgb(35, 210, 255, 0.645) 0.3%,
+    rgb(74, 104, 247, 0.645) 18.2%,
+    rgb(133, 80, 255, 0.645) 36.4%,
+    rgb(198, 59, 243, 0.645) 52.5%,
+    rgb(250, 84, 118, 0.645) 68.8%,
+    rgb(255, 223, 67, 0.645) 99.9%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 16rem; */
+}
+
+.moneyListItemQuestion {
+  /* border: 1px solid red; */
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  height: 2.4 rem;
+  /* background-color: rgba(240, 248, 255, 0.263); */
+  background: radial-gradient(
+    926px at 2.7% 11%,
+    rgb(17, 29, 94, 0.545) 0%,
+    rgb(178, 31, 102, 0.545) 90%
+  );
+  width: 5.3rem;
+}
+
+.moenyListItemMoney {
+  /* border: 1px solid red; */
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  /* margin-right: 1rem; */
+  background: radial-gradient(
+    926px at 2.7% 11%,
+    rgb(17, 29, 94, 0.545) 0%,
+    rgb(178, 31, 102, 0.545) 90%
+  );
+  width: 8.7rem;
 }
